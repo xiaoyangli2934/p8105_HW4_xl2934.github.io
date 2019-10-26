@@ -13,7 +13,7 @@ output:
 It seems not hard until now!
 
 ## resume
-You can check my resume by the navigation button or [this link](resume.Rmd).
+You can check my resume by the navigation button or [this link](resume.html).
 
 (Sadly, I don't have relevent experience about data science.)
 

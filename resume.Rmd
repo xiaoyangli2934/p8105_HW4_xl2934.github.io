@@ -1,0 +1,55 @@
+---
+title: "resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+---
+
+### Educational Background
+
+September 2015-June 2019 Huazhong University of Science and Technology (HUST) 
+
+College: College of Life Science and Technology 
+
+Major: Biotechnology
+
+Department: Department of Biotechnology 
+
+GPA: 3.85/4.0 
+
+### Exchange Experience
+
+January 2018-May 2018 University ofCalifornia, Berkeley (Spring 2018) 
+
+Department: Department of Integrative Biology 
+
+### Academic Achievements
+November 2015-October 2016 **Fundamental Study and Applying Attempts ofBiological Signal Filter in Gene Circuits Based on Positive Feedback Theory**
+
+Research Purpose: to build the biological signal filters, a functional prototype ofgene regulation circuit with adjustable expression efficiency and systematic robustness, based on the positive feedback regulation
+
+Professor: Yan Yunjun (professor) 
+
+Position: member of the experimental team 
+
+Responsibilities: 
+
+* applied some experimental technologies such as PCR, digestion and ligation to assemble responding part of the gene circuit in the positive feedback pathway and transformation to construct the expression strains
+* applied HTML to participate in team project web’s design and editing  
+* represented our team to take part in competition in Boston in October
+
+November 2016-October 2017 **Rare-earth Elements Enrichment by Bio-optimized Tool**
+
+Research Purpose: to reuse rare earth element from wastewater by constructing integrated biological system including sensing, enrichment and recycle
+
+Instructor: Yan Yunjun (professor) 
+
+Position: leading member of experimental team 
+
+Responsibilities:
+
+* applied some experimental technologies such as PCR, digestion and ligation to assemble sensing part of the gene circuit and transformation to construct the expression strains
+* learned modeling knowledge and participated in project modeling 
+* represented our team to take part in competition in Boston in November
