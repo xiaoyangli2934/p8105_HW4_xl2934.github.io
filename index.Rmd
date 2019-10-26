@@ -1,0 +1,23 @@
+---
+title: "Homework 4"
+author: "Xiaoyang Li"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+---
+
+**This is a website for homework 4.**
+
+It seems not hard until now!
+
+## resume
+You can check my resume by the navigation button or [this link](resume.Rmd).
+
+(Sadly, I don't have relevent experience about data science.)
+
+<img src="./images/image1.jpg" style="width:75%">
+
+## flexdashboard 
+You can check flexdashboard by the navigation button or [this link](dashboard.html).
