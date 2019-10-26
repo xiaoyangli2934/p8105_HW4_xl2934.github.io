@@ -1,8 +1,64 @@
 ---
 title: "dashboard"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
-    theme: flatly
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
+```{r}
+library(flexdashboard)
+library(tidyverse)
+library(rnoaa)
+library(plotly)
+library(p8105.datasets)
+```
+
+```{r}
+data("instacart")
+```
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### numbers of product sold in each aisle
+
+```{r}
+instacart %>% 
+  group_by(aisle) %>% 
+  summarize(n = n()) %>% 
+  mutate(aisle = fct_reorder(aisle, n)) %>%  
+  plot_ly(x = ~aisle, y = ~n, color = ~aisle, type = "bar")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### popular products sold time in a day
+
+```{r}
+data2 = instacart %>% 
+  group_by(product_name) %>% 
+  summarize(n = n()) %>% 
+  filter(n > 5000)
+
+inner_join(instacart, data2, by = "product_name") %>% 
+  plot_ly(y = ~order_hour_of_day, color = ~product_name, type = "box") %>% 
+  layout(xaxis = list(title = "product name"),
+         yaxis = list(title = "order hour of a day"))
+```
+
+### alcohol sold in each day of the week
+
+```{r}
+data3 = instacart %>% 
+  filter(department == "alcohol") %>% 
+  group_by(product_name) %>% 
+  summarize(n = n())
+
+inner_join(instacart, data3, by = "product_name") %>% 
+  group_by(order_dow, aisle) %>% 
+  summarize(number = n()) %>% 
+  plot_ly(x = ~order_dow, y = ~number, color = ~aisle, type = "scatter", mode = "markers") %>% 
+  layout(xaxis = list(title = "day of the week"))
+```
+
+
